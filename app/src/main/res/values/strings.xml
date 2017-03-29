@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TH Sensor Driver</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="activity">Activity</string>
+    <string name="sensor_reading">Number of Sensor Reading</string>
+
+    <string name="generate">Generate</string>
+    <string name="upload">Upload</string>
+
+    <string name="ok">OK</string>
+
+</resources>

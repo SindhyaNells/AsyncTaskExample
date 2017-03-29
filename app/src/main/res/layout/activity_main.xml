@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/temperature" />
+
+        <EditText
+            android:id="@+id/edit_text_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/humidity" />
+
+        <EditText
+            android:id="@+id/edit_text_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/activity" />
+
+        <EditText
+            android:id="@+id/edit_text_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sensor_reading" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/divider_margin"
+        android:layout_below="@id/layout_form"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="@dimen/divider_margin"
+            android:text="@string/generate"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="@dimen/divider_margin"
+            android:text="@string/upload"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_button"
+        android:layout_marginTop="@dimen/divider_margin">
+
+    </ListView>
+
+</RelativeLayout>
